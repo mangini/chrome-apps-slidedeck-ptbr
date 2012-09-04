@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google IO 2012</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/presentation.css">
+    <link rel="stylesheet" media="all" href="ilumiChrome/css/controller.css"></link>
+
+</head>
+<body style="opacity: 0">
+
+<slides class="layout-widescreen">
+
+  <slide class="logoslide nobackground nolights spot_off">
+    <article class="chromelogo">
+      <img src="images/chrome-logo.png"><div id="chrometext">chrome</div>
+    </article>
+  </slide>
+
+  <slide class="title-slide segue nobackground nolights spot_on">
+    <aside class="gdbar"><img src="images/chrome-logo.png"></aside>
+    <!-- The content of this hgroup is replaced programmatically through the slide_config.json. -->
+    <hgroup class="auto-fadein">
+      <h1 data-config-title><!-- populated from slide_config.json --></h1>
+      <h2 data-config-subtitle><!-- populated from slide_config.json --></h2>
+      <p data-config-presenter><!-- populated from slide_config.json --></p>
+    </hgroup>
+  </slide>
+
+  <slide class="topborder bluelights">
+    <hgroup class="bluebg">
+      <h2>Javascript, HTML e CSS</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img style="width: 300px;" src="images/trello.png"></img>
+      <img style="width: 300px;" src="images/pixlr.png"></img>
+      <img style="width: 300px;" src="images/radiocss.png"></img>
+    </article>
+  </slide>
+    
+  <slide class="topborder redlights">
+    <hgroup class="redbg">
+      <h2>Apps nativas</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img style="width: 420px;" src="images/sublime.png"></img>
+      <img style="width: 450px;" src="images/xbmc.png"></img>
+    </article>
+  </slide>
+
+  <slide class="topborder greenlights">
+    <hgroup class="greenbg">
+      <h2>Chrome Packaged Apps</h2>
+    </hgroup>
+    <article class="flexbox vcenter">
+      <img style="height: 250px;" src="images/cirque.png"></img>
+      <img style="height: 250px;" src="images/game3d.jpg"></img>
+      <footer class="source">Imagens: http://live.mace.ws/ e AllthingsD</footer>
+    </article>
+  </slide>
+
+  <slide class="topborder yellowlights">
+    <hgroup class="yellowbg">
+      <h2 id="offline_title">Web apps: Online first</h2>
+    </hgroup>
+    <article>
+    <div id="remember_icons" class="build">
+      <img id="icon1" class="icon" src="images/online.png"></img>
+      <div id="icon_appcache" class="icon" style="display: inline-block; line-height: 128px; vertical-align: top;">AppCache?</div>
+      <img id="icon2" class="icon" src="images/arrow.png"></img>
+      <img id="icon3" class="icon" src="images/offline.png"></img>
+      <div id="move_icons" class="icon">&nbsp;</div>
+    </div>
+    </article>
+  </slide>
+
+  <slide class="segue quote nobackground nolights" style="background-image: url(images/locationbar.png); background-position: top right; background-size: contain; background-repeat: no-repeat">
+    <article class="flexbox black vleft auto-fadein">
+      <q>
+        Como eu vejo aquele livro de receitas mesmo? 
+      </q>
+      <div class="author">
+        Josefina, minha tia avó
+      </div>
+    </article>
+  </slide>
+
+  <slide class="topborder bluelights">
+    <hgroup class="bluebg">
+      <h2>Out of browser</h2>
+    </hgroup>
+    <article>
+    <div class="ul build">
+      <div class="li">Executar independente do Browser</div>
+      <div class="li">Abrir links fora do app</div>
+      <div class="li">Look and feel nativo</div>
+    </div>
+    </article>
+  </slide>
+
+  <slide class="topborder greenlights">
+    <hgroup class="greenbg">
+      <h2>PODER</h2>
+    </hgroup>
+    <article>
+      <div class="ul build">
+        <div class="li">Window</div>
+        <div class="li">Identity (Google accounts e outros OAuth2 providers)</div>
+        <div class="li">Sync (chrome.storage.sync)</div>
+        <div class="li">Rede (server e client, TCP e UDP)</div>
+        <div class="li">Web Intents</div>
+        <div class="li">Integração com hardware (USB, serial, Bluetooth)</div>
+      </div>
+    </article>
+  </slide>
+
+  <slide class="topborder redlights">
+    <hgroup class="redbg">
+      <h2>Segurança</h2>
+    </hgroup>
+    <article>
+      <div class="ul build">
+        <div class="li">Content Security Policy (CSP)</div>
+        <div class="li">Processos "sandboxed" e independentes</div>
+        <div class="li">Modelo de permissões</div>
+      </div>
+    </article>
+  </slide>
+
+  <slide class="nolights">
+    <hgroup>
+      <h2>Show me the code</h2>
+    </hgroup>
+    <article>
+<pre class="prettyprint" data-lang="manifest.json"><span class="pun">{</span><span class="pln">
+  </span><span class="str">"manifest_version"</span><span class="pun">:</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"name"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"Hello World"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"version"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"1"</span><span class="pun">,</span><span class="pln">
+  </span><span class="str">"icons"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> </span><span class="str">"16"</span><span class="pun">:</span><span class="pln"> </span><span class="str">"icon_16.png"</span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+  </span><span class="str">"app"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+</span><b><span class="pln">    </span><span class="str">"background"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+      </span><span class="str">"scripts"</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">"main.js"</span><span class="pun">]</span><span class="pln">
+    </span><span class="pun">}</span></b><span class="pln">
+  </span><span class="pun">}</span><span class="pln">
+</span><span class="pun">}</span></pre> 
+    </article>
+  </slide>
+
+  <slide class="nolights">
+    <hgroup>
+      <h2>Show me the code</h2>
+    </hgroup>
+    <article>
+<pre class="prettyprint" data-lang="main.js"><span class="pln">chrome</span><span class="pun">.</span><span class="pln">app</span><span class="pun">.</span><span class="pln">runtime</span><span class="pun">.</span><span class="pln">onLaunched</span><span class="pun">.</span><span class="pln">addListener</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+  chrome</span><span class="pun">.</span><span class="pln">app</span><span class="pun">.</span><span class="pln">window</span><span class="pun">.</span><span class="pln">create</span><span class="pun">(</span><span class="str">'index.html'</span><span class="pun">,</span><span class="pln">
+    </span><span class="pun">{</span><span class="pln">width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">500</span><span class="pun">,</span><span class="pln"> height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">300</span><span class="pun">,</span><span class="pln"> 
+     left</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200</span><span class="pun">,</span><span class="pln"> top</span><span class="pun">:</span><span class="pln"> </span><span class="lit">200</span><span class="pun">,</span><span class="pln"> 
+     </span><b><span class="pln">frame</span><span class="pun">:</span><span class="pln"> </span><span class="str">'none'</span></b><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+  </span><span class="pun">);</span><span class="pln">
+</span><span class="pun">});</span></pre>
+    <aside style="top: 475px;" class="demobutton"></aside>
+    </article>
+  </slide>
+
+  <slide class="fill nobackground redlights" style="background-image: url(images/cooldemotime.png); background-size: cover;">
+    <hgroup>
+      <h2 class="meme">DEMO time</h2>
+    </hgroup>
+  </slide>
+
+  <slide class="fill nobackground greenlights" style="background-image: url(images/demotime.png); background-size: contain; background-position: center;">
+    <hgroup>
+      <h2 class="meme">EVEN COOLER</h2>
+      <h2 class="meme">DEMO time</h2>
+    </hgroup>
+    <article>
+      <footer style="position: absolute; bottom: 100px; left: 50%">
+        <h2 class="meme">YEAHH!</h2>
+      </footer>
+    </article>
+  </slide>
+
+  <slide class="nolights">
+    <hgroup>
+      <h2>IlumiChrome</h2>
+      <h3>Idéia, código e hardware: Luis Leão &lt;luisleao@gmail.com&gt;</h3>
+    </hgroup>
+    <article style="background: black; padding: 10px 20px; margin-top: 10px;">
+  <div class="dimmers">
+    <h2>Dimmers</h2>
+
+    <b>Geral</b><input id="geral" class="gray" type="range" min="0" max="255" value="0"></input><span>0</span><br>
+    <b>Logo</b><input id="logo" class="gray" type="range" min="0" max="255" value="0"></input><span>0</span><br>
+    <b>Púlpito</b><input id="pulpito" class="gray" type="range" min="0" max="255" value="0"></input><span>0</span><br>
+    <b>Lateral</b><input id="lateral" class="gray" type="range" min="0" max="255" value="0"></input><span>0</span><br>
+    <b>BRUT</b><input id="brut" class="gray" type="range" min="0" max="255" value="0"></input><span>0</span><br>
+
+  </div>
+
+
+  <div id="channel_data">
+    <h2>RGB</h2>
+    <button class="rgb_liga">Ligar</button>
+    <br clear="all" ></br>
+    <div class="channel_values">
+      <input class="r" type="range" min="0" max="255" value="0"></input><span>0</span>
+      <input class="g" type="range" min="0" max="255" value="0"></input><span>0</span>
+      <input class="b" type="range" min="0" max="255" value="0"></input><span>0</span>
+    </div>
+    <div id="sample">
+    </div>
+
+  </div>
+
+    </article>
+  </slide>
+
+  <slide class="thank-you-slide segue nobackground nolights">
+    <aside class="gdbar right"><img src="images/chrome-logo.png"></aside>
+    <article class="flexbox vleft auto-fadein">
+      <h2>Para saber mais:</h2>
+      <p>developer.chrome.com/apps</p>
+      <p>github.com/GoogleChrome</p>
+      <p>chromium-apps@chromium.org</p>
+      <p>#chromium-apps (freenode)</p>
+    </article>
+  </slide>
+
+  <slide class="logoslide dark nobackground spot_off nolights">
+    <article class="chromelogo">
+      <img src="images/chrome-logo.png"><div id="chrometext">chrome</div>
+    </article>
+  </slide>
+  </slide>
+
+  <slide class="backdrop"></slide>
+
+</slides>
+
+<script src="js/slide-config.js"></script>
+<script src="js/slide-controller.js"></script>
+<script src="js/slide-deck.js"></script>
+<script src="ilumiChrome/js/serial.js"></script>
+<script src="ilumiChrome/js/dmx.js"></script>
+<script src="js/slides.js"></script>
+<script src="ilumiChrome/js/controller.js"></script>
+</body>
+</html>

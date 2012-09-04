@@ -1,0 +1,50 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+}
+
+body {
+  padding: 20px;
+
+  color: #fff;
+  font-family: 'Open Sans', arial, sans-serif;
+  font-size: 15px;
+  overflow: hidden;
+
+/*
+  background-image: url(../img/background_holo_dark.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+*/
+
+
+}
+
+header {
+ position: relative;
+}
+
+.commands {
+}
+
+.log {
+ height: 140px;
+ background: white;
+ border: 1px solid #333;
+ overflow: auto;
+ font-size: 12px;
+
+}
+
+
+h1 {
+  margin: 0;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
